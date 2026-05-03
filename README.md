@@ -75,8 +75,21 @@ You can run this project as a containerized application:
    ```
 The API will be available at `http://localhost:5000`.
 
+## 📂 Project Structure
+The project follows a modular, production-standard structure:
+- `server/`: Main application package.
+  - `__init__.py`: App factory.
+  - `config.py`: Environment configurations.
+  - `routes.py`: API endpoint definitions.
+  - `services/`: Business logic and ML services.
+- `app.py`: Application entry point.
+- `Dockerfile`: Containerization settings.
+
 ## 🌐 API Documentation
-### `POST /predict`
+### `GET /`
+Welcome message and endpoint overview.
+
+### `POST /api/v1/predict`
 Submit data as JSON to get a prediction.
 
 **Request Body:**
@@ -93,11 +106,16 @@ Submit data as JSON to get a prediction.
 **Response:**
 ```json
 {
-  "predicted_yield": 10.534,
   "status": "success",
-  "unit": "hg/ha"
+  "data": {
+    "predicted_yield": 10.534,
+    "unit": "hg/ha"
+  }
 }
 ```
+
+### `GET /api/v1/health`
+Check if the server is healthy.
 
 ## 🔮 Future Enhancements
 - Integration with a web interface (Flask/Streamlit).
