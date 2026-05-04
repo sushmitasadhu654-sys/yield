@@ -1,7 +1,8 @@
-# Crop Yield Prediction 🌾
+# 🌾 Crop Yield Prediction 🚜
 
-## 📌 Project Overview
-This project aims to predict crop yields based on environmental factors such as rainfall, temperature, and pesticide usage across different regions and crop types. By leveraging machine learning models, we can provide insights into agricultural productivity and help stakeholders make informed decisions.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The project explores multiple regression algorithms to find the most accurate model for predicting yield (measured in `hg/ha`).
 
@@ -124,4 +125,61 @@ Check if the server is healthy.
 - Expanding the dataset to more recent years.
 
 ---
-Developed as part of an Agricultural Data Science initiative. 🚜
+
+## 🌟 Overview
+This project leverages historical data to provide insights and predictions for various crops. It aims to help farmers and stakeholders make data-driven decisions for better food security.
+
+## 🚀 Key Features
+- **Data-Driven Predictions**: Uses Random Forest Regressor for high accuracy.
+- **Interactive Notebook**: Step-by-step EDA and Model Training in `yield.ipynb`.
+- **Web App**: A Flask-based interface for real-time predictions.
+- **Comprehensive Visuals**: Feature distribution and correlation analysis included.
+
+## 📂 Project Structure
+```bash
+├── app.py              # Flask Application entry point
+├── predict.py          # CLI Prediction script
+├── setup.bat           # Windows Setup Script
+├── assets/             # Project visualizations and images
+├── data/               # Datasets (yield_df.csv)
+├── models/             # Trained ML models
+├── scripts/            # Automation scripts
+├── src/                # Modular source code
+├── server/             # Web server modules
+└── requirements.txt    # Project dependencies
+```
+
+## 🛠️ Quick Start
+
+### 1. Setup Environment
+Run the automated setup script to create a virtual environment and install dependencies:
+```powershell
+.\setup.bat
+```
+
+### 2. Train the Model
+Instead of running a manual notebook, use the automated training pipeline to process data and save the model to the `models/` directory:
+```bash
+python scripts/train_pipeline.py
+```
+
+### 3. Run the Web Application
+Launch the interactive prediction interface:
+```bash
+python app.py
+```
+Visit `http://localhost:5000` in your browser to see the results!
+
+## 📊 Visualizations
+| Feature Distribution | Correlation Heatmap |
+| :---: | :---: |
+| ![Features](assets/Feature_Distribution.png) | ![Correlation](assets/correlation.png) |
+
+## 🤝 Contributing
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+Built with ❤️ for a greener future.

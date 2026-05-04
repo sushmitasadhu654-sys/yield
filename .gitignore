@@ -25,15 +25,20 @@ wheels/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# ML models
-*.pkl
-*.joblib
-
 # Environments
 .env
 .venv
 venv/
 ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# Data & Models
+models/
+*.pkl
+yield_df.csv
 
 # OS
 .DS_Store
