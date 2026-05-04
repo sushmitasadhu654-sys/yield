@@ -1,9 +1,18 @@
+# Core Data Science
 pandas
 numpy
 matplotlib
 seaborn
 scikit-learn
-ipykernel
 joblib
+
+# Jupyter Notebook Support
+ipykernel
+notebook
+
+# Web Deployment
 flask
 gunicorn
+
+# Utilities
+python-dotenv
